@@ -78,7 +78,9 @@ dependencies {
     // gson
     api "com.squareup.retrofit2:converter-gson:$retrofitVersion"
     // logging interceptor
-    api "com.squareup.okhttp3:logging-interceptor:4.6.0"
+    api('com.github.ihsanbal:LoggingInterceptor:3.1.0') {
+        exclude group: 'org.json', module: 'json'
+    }
 
     // kotlin coroutines
     api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
