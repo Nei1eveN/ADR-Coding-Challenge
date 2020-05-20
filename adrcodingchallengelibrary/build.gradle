@@ -61,31 +61,31 @@ dependencies {
     def nav_version = "2.3.0-alpha06"
 
     // mvrx
-    implementation "com.airbnb.android:mvrx:$mvrxVersion"
+    api "com.airbnb.android:mvrx:$mvrxVersion"
     // epoxy
-    implementation "com.airbnb.android:epoxy:$epoxyVersion"
+    api "com.airbnb.android:epoxy:$epoxyVersion"
     // epoxy databinding support
-    implementation "com.airbnb.android:epoxy-databinding:$epoxyVersion"
+    api "com.airbnb.android:epoxy-databinding:$epoxyVersion"
     // Add the annotation processor if you are using Epoxy's annotations (recommended)
     kapt "com.airbnb.android:epoxy-processor:$epoxyVersion"
 
     // glide
-    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    api "com.github.bumptech.glide:glide:$glideVersion"
     kapt "com.github.bumptech.glide:compiler:$glideVersion"
 
     // retrofit
-    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    api "com.squareup.retrofit2:retrofit:$retrofitVersion"
     // gson
-    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    api "com.squareup.retrofit2:converter-gson:$retrofitVersion"
     // logging interceptor
-    implementation "com.squareup.okhttp3:logging-interceptor:4.6.0"
+    api "com.squareup.okhttp3:logging-interceptor:4.6.0"
 
     // kotlin coroutines
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
 
     // navigation jetpack
     // Kotlin
-    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
-    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    api "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    api "androidx.navigation:navigation-ui-ktx:$nav_version"
 }
