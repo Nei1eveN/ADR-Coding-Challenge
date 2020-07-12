@@ -1,0 +1,17 @@
+object DependencyVersions {
+    const val appcompat = "1.1.0"
+    const val core_ktx = "1.3.0"
+    const val junit_unit_test = "4.13"
+    const val androidx_junit_ext = "1.1.1"
+    const val espresso_core = "3.2.0"
+    const val kotlinVersion = "1.3.72"
+    const val realmVersion = "6.1.0"
+    const val glideVersion = "4.11.0"
+    const val retrofitVersion = "2.9.0"
+    const val loggingInterceptor = "3.1.0"
+    const val mvrxVersion = "1.5.1"
+    const val epoxyVersion = "3.11.0"
+    const val coroutinesVersion = "1.3.6"
+    const val nav_version = "2.3.0"
+    const val exoPlayerVersion = "2.11.4"
+}
