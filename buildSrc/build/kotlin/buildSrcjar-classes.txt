@@ -1,0 +1,1 @@
+C:\Users\Neil\AndroidStudioProjects\ADRCodingChallengeLibrary\buildSrc\build\classes\kotlin\main\DependencyVersions.class;C:\Users\Neil\AndroidStudioProjects\ADRCodingChallengeLibrary\buildSrc\build\classes\kotlin\main\Libs.class

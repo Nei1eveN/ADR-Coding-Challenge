@@ -55,7 +55,8 @@ abstract class BaseActivity<B : ViewDataBinding> : AppCompatActivity() {
             }
 
         if (askForPermissions) {
-            ActivityCompat.requestPermissions(this, permissions,
+            ActivityCompat.requestPermissions(
+                this, permissions,
                 PERMISSIONS_REQUEST
             )
         } else {
