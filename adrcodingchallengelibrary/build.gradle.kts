@@ -1,19 +1,18 @@
 plugins {
     id("com.android.library")
-    kotlin("android")
-    kotlin("android.extensions")
+    /*id("kotlin-android")
+    id("kotlin-android-extensions")
     id("kotlin-kapt")
     id("realm-android")
-    id("maven-publish")
+    id("maven-publish")*/
 }
 
-kapt {
+/*kapt {
     correctErrorTypes = true
-}
+}*/
 
 android {
     compileSdkVersion(29)
-    buildToolsVersion("29.0.3")
 
     defaultConfig {
         minSdkVersion(23)
@@ -22,7 +21,6 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -44,9 +42,9 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 
-    kotlinOptions {
+    /*kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
-    }
+    }*/
 
 }
 
@@ -66,11 +64,11 @@ dependencies {
     // epoxy databinding support
     api(Libs.epoxy_databinding_support)
     // Add the annotation processor if you are using Epoxy's annotations (recommended)
-    kapt(Libs.epoxy_annotation_processor)
+    /*kapt(Libs.epoxy_annotation_processor)*/
 
     // glide
     api(Libs.glide)
-    kapt(Libs.glide_compiler)
+    /*kapt(Libs.glide_compiler)*/
 
     // retrofit
     api(Libs.retrofit)
