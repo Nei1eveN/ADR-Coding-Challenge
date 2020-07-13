@@ -1,12 +1,10 @@
 plugins {
     `android-library`
     /*id("com.android.library")*/
-
     kotlin("android")
     id("org.jetbrains.kotlin.android.extensions")
-    /*id("kotlin-kapt")
+    id("kotlin-kapt")
     id("realm-android")
-    id("maven-publish")*/
     `maven-publish`
 }
 
