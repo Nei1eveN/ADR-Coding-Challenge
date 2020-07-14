@@ -6,6 +6,7 @@ import io.realm.RealmModel
 import io.realm.RealmObject
 import io.realm.RealmObjectChangeListener
 import io.realm.RealmResults
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.callbackFlow
@@ -28,6 +29,7 @@ inline fun <reified T : RealmModel> Realm.find(primaryKeyValue: Int): T? {
     return this.where(T::class.java).equalTo(primaryKey, primaryKeyValue).findFirst()
 }
 
+@ExperimentalCoroutinesApi
 fun <T : RealmObject> RealmResults<T>.asCallbackFlow() = callbackFlow {
     val listener = OrderedRealmCollectionChangeListener<RealmResults<T>> { results, _ ->
         offer(results.map { it.toUnmanaged() })
@@ -39,6 +41,7 @@ fun <T : RealmObject> RealmResults<T>.asCallbackFlow() = callbackFlow {
     }
 }
 
+@ExperimentalCoroutinesApi
 fun <T : RealmObject> T.asCallbackFlow() = callbackFlow {
     val listener = RealmObjectChangeListener<T> { managedObject, _ ->
         if (managedObject.isValid) {

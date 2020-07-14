@@ -23,7 +23,11 @@ abstract class BindingMvRxFragment<B : ViewDataBinding> : BaseMvRxFragment() {
     @get:LayoutRes
     abstract val layoutId: Int
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
         binding = DataBindingUtil.inflate(inflater, layoutId, container, false)
         return binding.root
     }

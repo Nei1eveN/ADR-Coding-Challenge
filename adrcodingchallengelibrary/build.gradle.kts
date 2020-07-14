@@ -1,6 +1,6 @@
 plugins {
-    `android-library`
-    /*id("com.android.library")*/
+    /*`android-library`*/
+    id("com.android.library")
     kotlin("android")
     id("org.jetbrains.kotlin.android.extensions")
     id("kotlin-kapt")
