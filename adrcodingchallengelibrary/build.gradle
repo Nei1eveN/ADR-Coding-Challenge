@@ -49,9 +49,30 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.3.0'
-    testImplementation 'junit:junit:4.13'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // testing dependencies
+    testApi 'junit:junit:4.13'
+    // Optional -- Robolectric environment
+    testApi 'androidx.test:core:1.2.0'
+    testApi 'org.robolectric:robolectric:4.3.1'
+    // Optional -- Mockito framework
+    testApi 'org.mockito:mockito-core:3.3.3'
+    testApi 'org.mockito:mockito-inline:2.13.0'
+    testApi 'com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0'
+    // Coroutines test
+    testApi "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.3.7"
+    // Core library
+    androidTestApi 'androidx.test:core:1.2.0'
+    // AndroidJUnitRunner and JUnit Rules
+    androidTestApi 'androidx.test:runner:1.2.0'
+    androidTestApi 'androidx.test:rules:1.2.0'
+    // Assertions
+    androidTestApi 'androidx.test.ext:junit:1.1.1'
+    androidTestApi 'androidx.test.ext:truth:1.2.0'
+    androidTestApi 'com.google.truth:truth:1.0.1'
+    testApi 'com.google.truth:truth:1.0.1'
+    // Espresso dependencies
+    androidTestApi 'androidx.test.espresso:espresso-core:3.2.0'
 
     def glideVersion = "4.11.0"
     def retrofitVersion = '2.9.0'
